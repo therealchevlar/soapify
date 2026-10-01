@@ -1,0 +1,6 @@
+{
+  "name": "SOAPIFY - Automated Personalized Cleanser System",
+  "description": "Intelligent automated personalized liquid cleanser formulation and dispensing platform with real-time machine telemetry, hardware abstraction, and SOAP DNA traceability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
