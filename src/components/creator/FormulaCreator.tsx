@@ -395,7 +395,7 @@ export const FormulaCreator: React.FC = () => {
               <div className="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6 transition-colors">
                 <div className="border-b border-slate-200 dark:border-slate-800 pb-4">
                   <span className="text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest block mb-1">
-                    YOUR BESPOKE CLEANSER
+                    
                   </span>
                   <h3 className="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
                     {preferences.customName || `${preferences.fragrance} Cleanser`}

@@ -25,14 +25,14 @@ export const BatchHistory: React.FC = () => {
       {/* Header & Filter Controls */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5 transition-colors">
         <div>
-          <div className="flex items-center gap-2 text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest mb-1">
-            <span className="flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-              Product Collection
-            </span>
-            <span>·</span>
-            <span>Formulation Ledger</span>
-          </div>
+          {/* <div className="flex items-center gap-2 text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest mb-1"> */}
+            {/* <span className="flex items-center gap-1.5"> */}
+              {/* <Sparkles className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" /> */}
+              {/* Product Collection */}
+            {/* </span> */}
+            {/* <span>·</span> */}
+            {/* <span>Formulation Ledger</span> */}
+          {/* </div> */}
           <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">My Soaps</h1>
         </div>
 

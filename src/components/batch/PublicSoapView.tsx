@@ -59,15 +59,15 @@ export const PublicSoapView: React.FC<PublicSoapViewProps> = ({ dnaCode }) => {
       {/* Top Brand Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5 transition-colors">
         <div>
-          <div className="flex items-center gap-2 text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest mb-1">
-            <span className="flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-              SOAPIFY Identity
-            </span>
-            <span>·</span>
-            <span>Verified Product Record</span>
-          </div>
-          <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">Your Bespoke Cleanser</h1>
+          {/* <div className="flex items-center gap-2 text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest mb-1"> */}
+            {/* <span className="flex items-center gap-1.5"> */}
+              {/* <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" /> */}
+              {/* SOAPIFY Identity */}
+            {/* </span> */}
+            {/* <span>·</span> */}
+            {/* <span>Verified Product Record</span> */}
+          {/* </div> */}
+          <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">espoke Cleanser</h1>
         </div>
 
         <div className="flex items-center gap-3">
@@ -215,14 +215,7 @@ export const PublicSoapView: React.FC<PublicSoapViewProps> = ({ dnaCode }) => {
               </div>
             </div>
 
-            {/* Industrial Batch Barcode */}
-            <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center space-y-2">
-              <div className="flex items-center justify-between w-full text-[10px] font-mono font-bold text-slate-500 dark:text-slate-400">
-                <span>BATCH CODE 128 BARCODE:</span>
-                <span>{batch.id}</span>
-              </div>
-              <BarcodeComponent value={batch.id} height={36} width={1.8} showDownload={true} />
-            </div>
+            
 
             {/* Actions */}
             <div className="pt-2 flex items-center gap-3">

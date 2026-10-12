@@ -2,7 +2,7 @@
  * @file SoapifyLogo.tsx
  * @description Official SOAPIFY brand identity vector component.
  * Reproduces the hexagonal faceted 'S' emblem, modern geometric wordmark,
- * and official tagline: "PERSONALIZED. AUTOMATED. YOUR FORMULA."
+ * and official tagline: "Personalized Formulation Record"
  */
 
 import React from 'react';
@@ -175,7 +175,7 @@ export const SoapifyLogo: React.FC<SoapifyLogoProps> = ({
         <span
           className={`font-sans font-semibold uppercase mt-1.5 ${taglineSizes[size]} ${taglineColor}`}
         >
-          Personalized. Automated. Your Formula.
+          Personalized Formulation Record.
         </span>
       )}
     </div>

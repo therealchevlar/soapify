@@ -209,7 +209,7 @@ export class FormulationEngine {
       fragrance: 'LAVENDER',
       fragranceIntensity: 60,
       volumeMl: 250,
-      customName: 'Custom Lavender Blend',
+      customName: 'Custom Lavender Cleanser',
     };
   }
 }

@@ -35,7 +35,7 @@ export const LandingPage: React.FC = () => {
           {/* Left Text Zone (6 cols) */}
           <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sky-50 dark:bg-sky-950/60 border border-sky-100 dark:border-sky-800/80 shadow-xs mb-2 transition-colors">
-              <span className="h-2 w-2 rounded-full bg-sky-500 animate-pulse" />
+              {/* <span className="h-2 w-2 rounded-full bg-sky-500 animate-pulse" /> */}
               <span className="text-xs font-mono font-semibold text-sky-800 dark:text-sky-300 tracking-wider uppercase">
                 {/* Robotic Personal Care · 2026 Edition */}
               </span>

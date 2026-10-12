@@ -52,15 +52,15 @@ export const SoapDnaView: React.FC = () => {
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5 transition-colors">
         <div>
-          <div className="flex items-center gap-2 text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest mb-1">
-            <span className="flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-              SOAPIFY IDENTITY
-            </span>
-            <span>·</span>
-            <span>DIGITAL PRODUCT PASSPORT</span>
-          </div>
-          <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">SOAP DNA Profile</h1>
+          {/* <div className="flex items-center gap-2 text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest mb-1"> */}
+            {/* <span className="flex items-center gap-1.5"> */}
+              {/* <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" /> */}
+              {/* SOAPIFY IDENTITY */}
+            {/* </span> */}
+            {/* <span>·</span> */}
+            {/* <span>DIGITAL PRODUCT PASSPORT</span> */}
+          {/* </div> */}
+          <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">SOAP DNA PROFILE</h1>
         </div>
 
         <div className="flex items-center gap-3">
@@ -93,7 +93,7 @@ export const SoapDnaView: React.FC = () => {
 
             <div className="space-y-1">
               <span className="text-[11px] font-mono uppercase tracking-widest text-slate-400 dark:text-slate-500 block font-semibold">
-                YOUR BESPOKE CLEANSER
+                
               </span>
               <h2 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
                 {formula.preferences.customName || `${soapDna.fragrance} Cleanser`}
@@ -139,10 +139,6 @@ export const SoapDnaView: React.FC = () => {
               <div className="text-xs font-mono text-slate-700 dark:text-slate-300 font-semibold">
                 {soapDna.volumeMl} ML · {soapDna.fragrance.toUpperCase()} · {soapDna.skinType.toUpperCase()} SKIN
               </div>
-
-              <p className="text-[10px] font-mono text-slate-400 dark:text-slate-500 break-all pt-1">
-                {soapDna.publicUrl}
-              </p>
             </div>
 
             {/* Print Label Action */}
@@ -154,7 +150,7 @@ export const SoapDnaView: React.FC = () => {
                 onClick={() => setShowPrintModal(true)}
               >
                 <Printer className="w-3.5 h-3.5" />
-                <span>Print Cosmetic Bottle Label (3" × 5") ↗</span>
+                <span>Print Cosmetic Bottle Label  ↗</span>
               </Button>
             </div>
           </div>
@@ -171,8 +167,8 @@ export const SoapDnaView: React.FC = () => {
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
                   <span>Verified Formulation</span>
                   <span className="inline-flex items-center gap-1 text-[10px] font-mono font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/70 border border-emerald-200 dark:border-emerald-800 px-2 py-0.5 rounded-full">
-                    <Sparkles className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
-                    AUTHENTIC
+                    {/* <Sparkles className="w-3 h-3 text-emerald-600 dark:text-emerald-400" /> */}
+                    {/* AUTHENTIC */}
                   </span>
                 </h3>
               </div>
@@ -220,42 +216,8 @@ export const SoapDnaView: React.FC = () => {
               </div>
             </div>
 
-            {/* 1D Industrial Batch Barcode (Code 128) */}
-            <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 space-y-3">
-              <div className="flex items-center justify-between text-[10px] font-mono font-bold text-slate-500 dark:text-slate-400">
-                <span>INDUSTRIAL CODE 128 BARCODE</span>
-                <span>BATCH: {batch.id}</span>
-              </div>
-              <div className="flex justify-center py-1">
-                <BarcodeComponent
-                  value={batch.id}
-                  height={42}
-                  width={2}
-                  showDownload={true}
-                  showPrint={true}
-                />
-              </div>
-            </div>
-
-            {/* Feedback & Reorder Row */}
-            <div className="pt-2 flex items-center gap-3">
-              <Button
-                variant="primary"
-                size="md"
-                className="flex-1 font-bold cursor-pointer shadow-md shadow-sky-500/20"
-                onClick={() => recreateFormula(formula)}
-              >
-                Recreate This Formula
-              </Button>
-              <Button
-                variant="secondary"
-                size="md"
-                className="cursor-pointer text-xs font-mono"
-                onClick={() => setFeedbackModalBatchId(batch.id)}
-              >
-                Rate Cleanser
-              </Button>
-            </div>
+            
+            
           </div>
         </div>
       </div>
