@@ -7,7 +7,6 @@
 
 import React from 'react';
 import { useApp } from '../../context/AppContext';
-import { useMachine } from '../../context/MachineContext';
 import { SoapifyLogo } from '../brand/SoapifyLogo';
 import { Button } from '../ui/Button';
 import { Sun, Moon, Monitor } from 'lucide-react';
@@ -24,7 +23,6 @@ export const TopNav: React.FC = () => {
     theme,
     toggleTheme,
   } = useApp();
-  const { status } = useMachine();
 
   const navLinks = [
     { id: 'landing', label: 'Home' },
@@ -81,38 +79,6 @@ export const TopNav: React.FC = () => {
             ) : (
               <Moon className="w-4 h-4 text-slate-700 animate-in spin-in-180 duration-300" />
             )}
-          </button>
-
-          {/* Engineering Mode Button */}
-          <button
-            onClick={() => setCurrentView(currentView === 'hardware' ? 'creator' : 'hardware')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded-xl border transition-all cursor-pointer ${
-              currentView === 'hardware'
-                ? 'bg-emerald-50 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700 font-bold shadow-xs'
-                : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white shadow-xs'
-            }`}
-            title="Open Engineering Diagnostics, Load Cell Telemetry & ESP32 Bridge"
-          >
-            <span
-              className={`h-2 w-2 rounded-full ${
-                status.connected ? 'bg-emerald-500 animate-pulse' : 'bg-rose-500'
-              }`}
-            />
-            <span className="hidden sm:inline">Engineering</span>
-          </button>
-
-          {/* Machine Mode Switcher (Dedicated Touchscreen) */}
-          <button
-            onClick={() => setDisplayMode(displayMode === 'MACHINE' ? 'WEB' : 'MACHINE')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-xl border transition-all cursor-pointer shadow-xs ${
-              displayMode === 'MACHINE'
-                ? 'bg-sky-500 text-white border-sky-400 font-bold'
-                : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
-            }`}
-            title="Toggle between Web browser mode and dedicated 7-10 inch Machine Touchscreen mode"
-          >
-            <Monitor className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Touchscreen Mode</span>
           </button>
 
           {/* Guided FYP Demo Button */}

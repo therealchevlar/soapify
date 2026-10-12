@@ -37,7 +37,7 @@ export const LandingPage: React.FC = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sky-50 dark:bg-sky-950/60 border border-sky-100 dark:border-sky-800/80 shadow-xs mb-2 transition-colors">
               <span className="h-2 w-2 rounded-full bg-sky-500 animate-pulse" />
               <span className="text-xs font-mono font-semibold text-sky-800 dark:text-sky-300 tracking-wider uppercase">
-                Robotic Personal Care · 2026 Edition
+                {/* Robotic Personal Care · 2026 Edition */}
               </span>
             </div>
 
@@ -53,7 +53,7 @@ export const LandingPage: React.FC = () => {
             </div>
 
             <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              Create a cleanser designed around you. Tell us about your skin, choose your color, and select your natural botanicals—then watch the machine dose your batch in real time.
+              Create a cleanser designed around you. Tell us about your skin, choose your color, and select your natural botanicals then watch the machine dose your batch in real time.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
@@ -78,16 +78,16 @@ export const LandingPage: React.FC = () => {
             {/* Quick Proof Metrics */}
             <div className="pt-8 border-t border-slate-200 dark:border-slate-800 grid grid-cols-3 gap-6 text-center lg:text-left transition-colors">
               <div>
-                <span className="text-2xl sm:text-3xl font-mono font-black text-slate-900 dark:text-white block">0.1 g</span>
-                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Strain-Gauge Scale</span>
+                {/* <span className="text-2xl sm:text-3xl font-mono font-black text-slate-900 dark:text-white block"></span>
+                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium"></span> */}
               </div>
               <div>
-                <span className="text-2xl sm:text-3xl font-mono font-black text-emerald-600 dark:text-emerald-400 block">pH 5.4</span>
-                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Acid Mantle Safe</span>
+                {/* <span className="text-2xl sm:text-3xl font-mono font-black text-emerald-600 dark:text-emerald-400 block"></span>
+                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Acid Mantle Safe</span> */}
               </div>
               <div>
-                <span className="text-2xl sm:text-3xl font-mono font-black text-sky-600 dark:text-sky-400 block">SOAP DNA</span>
-                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Scannable QR Passport</span>
+                {/* <span className="text-2xl sm:text-3xl font-mono font-black text-sky-600 dark:text-sky-400 block">SOAP DNA</span>
+                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Scannable QR Passport</span> */}
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ export const LandingPage: React.FC = () => {
               {/* Floating micro badges */}
               <div className="absolute -top-3 -right-3 px-3.5 py-1.5 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md flex items-center gap-2 transition-colors">
                 <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">100% Bespoke Formula</span>
+                {/* <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">100% Bespoke Formula</span> */}
               </div>
             </div>
           </div>
@@ -122,17 +122,16 @@ export const LandingPage: React.FC = () => {
       {/* 2. HOW IT WORKS (6 PHASES)                           */}
       {/* ---------------------------------------------------- */}
       <section id="how-it-works" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="border-b border-slate-200 dark:border-slate-800 pb-5 mb-12 text-center sm:text-left flex flex-col sm:flex-row sm:items-end justify-between gap-4 transition-colors">
+        <div className="border-b border-slate-200 dark:border-slate-800 pb-5 mb-12 text-center flex-col sm:flex-row sm:items-end justify-between gap-4 transition-colors">
           <div>
             <span className="text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest block mb-1">
-              Automated Mechatronics
+              {/* Automated Mechatronics */}
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              How SOAPIFY Works
-            </h2>
-          </div>
+           <h2 className="w-full text-center text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+  HOW SOAPIFY WORKS</h2>
+        </div>
           <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md">
-            From your skin condition to a formulated bottle on the platform in 75 seconds.
+            {/* From your skin condition to a formulated bottle on the platform in 75 seconds. */}
           </p>
         </div>
 
@@ -189,53 +188,7 @@ export const LandingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* ---------------------------------------------------- */}
-      {/* 3. MACHINE ARCHITECTURE SHOWCASE                    */}
-      {/* ---------------------------------------------------- */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="p-8 sm:p-12 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-10 items-center transition-colors">
-          <div className="lg:col-span-6 space-y-5 text-left">
-            <span className="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block">
-              PRECISION ROBOTICS
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Laboratory accuracy on your countertop.
-            </h2>
-            <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-              Standard cleansers sit in factory warehouses for months filled with harsh sulfates and preservatives.
-              SOAPIFY formulates fresh on demand using sterile peristaltic silicone fluid lines and closed-loop weight tracking.
-            </p>
-            <div className="space-y-3 pt-2 text-xs font-medium text-slate-700 dark:text-slate-300">
-              <div className="flex items-center gap-2.5">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                <span>Zero cross-contamination peristaltic fluid isolation</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <span className="h-2 w-2 rounded-full bg-sky-500" />
-                <span>HX711 24-bit ADC load cell sampling at 80 Hz</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <span className="h-2 w-2 rounded-full bg-amber-500" />
-                <span>Camera-scannable SOAP DNA and Code 128 batch tracking</span>
-              </div>
-            </div>
-            <div className="pt-4">
-              <Button
-                variant="secondary"
-                onClick={() => setCurrentView('hardware')}
-                className="font-mono text-xs cursor-pointer"
-              >
-                Inspect ESP32 Engineering Console →
-              </Button>
-            </div>
-          </div>
-
-          <div className="lg:col-span-6">
-            <MachineIllustration className="shadow-lg" />
-          </div>
-        </div>
-      </section>
-
+   
       {/* ---------------------------------------------------- */}
       {/* 4. FINAL CALL TO ACTION                              */}
       {/* ---------------------------------------------------- */}
@@ -263,7 +216,7 @@ export const LandingPage: React.FC = () => {
               onClick={startDemo}
               className="font-semibold cursor-pointer"
             >
-              Launch Guided FYP Tour
+              DEMO THE MACHINE
             </Button>
           </div>
         </div>
@@ -273,22 +226,9 @@ export const LandingPage: React.FC = () => {
       {/* 5. FOOTER                                           */}
       {/* ---------------------------------------------------- */}
       <footer className="border-t border-slate-200 dark:border-slate-800 pt-8 pb-12 bg-white dark:bg-slate-950 transition-colors">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400 font-mono">
-          <div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex  items-center justify-center gap-4 text-xs text-slate-500 dark:text-slate-400 font-mono">
+          <div className="text-center">
             <span>© 2026 SOAPIFY ENGINEERING. ALL RIGHTS RESERVED.</span>
-          </div>
-          <div className="flex items-center gap-6">
-            <button onClick={() => setCurrentView('creator')} className="hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors">
-              Formulator
-            </button>
-            <span>·</span>
-            <button onClick={() => setCurrentView('batch-history')} className="hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors">
-              My Soaps
-            </button>
-            <span>·</span>
-            <button onClick={() => setCurrentView('hardware')} className="hover:text-slate-900 dark:hover:text-white cursor-pointer transition-colors">
-              Engineering Console
-            </button>
           </div>
         </div>
       </footer>
